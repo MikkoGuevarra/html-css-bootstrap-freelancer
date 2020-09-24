@@ -85,6 +85,28 @@ main {
     font-size: 44px;
 }
 
+hr {
+    width: 112px;
+    height: 10px;
+    border: 0px solid white;
+    background-color: white;
+    display: inline-block;
+    border-radius: 16px;
+}
+
+.left-divider {
+    text-align: right;
+}
+
+.star {
+    text-align: center;
+}
+
+.right-divider {
+    text-align: left;
+}
+
+
 
 /* -----MEDIAQUERY----- */
 
