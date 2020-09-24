@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: #2c3e50
+    background-color: #2c3e50;
 }
 /* -----NAV BAR----- */
 .navbar-brand {
@@ -15,7 +15,7 @@ h1 {
     font-size: 33px;
 }
 .navbar-default {
-    background-color: transparent;
+    background-color: #2c3e50;
     border: none;
 }
 
@@ -56,6 +56,22 @@ h1 {
 }
 /* -----FINE NAV BAR----- */
 
+/* -----MAIN / JUMBO----- */
+.img-jumbo {
+    width: 240px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    padding-top: 105px;
+    background-color: #1abc9c;
+    color: white;
+}
+
 
 
 /* -----MEDIAQUERY----- */
@@ -70,7 +86,7 @@ h1 {
     }
 
     .navbar-header {
-    float: none;
+        float: none;
 }
 }
 
