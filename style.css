@@ -138,6 +138,7 @@ section {
 /* -----section 2----- */
 .portfolio-img {
     margin-bottom: 38px;
+    position: relative;
 }
 
 .portfolio-img img {
@@ -147,15 +148,29 @@ section {
     height: auto;
 }
 
-.portfolio-img:after {
+.portfolio-img::after {
     content: "\f067";
     font-family: "Font Awesome 5 Free";
-    font-weight: normal;
-    font-size: 80px;
-    color: black;
+    font-weight: bold;
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.portfolio-img:hover.portfolio-img::after {
+    display: block;
 }
 
 /* -----fine section 2 */
+
+/* -----section 3----- */
+
+
+/* -----fine section3----- */
 
 
 
