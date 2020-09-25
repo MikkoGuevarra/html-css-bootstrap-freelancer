@@ -29,7 +29,7 @@ h2 {
 }
 h3 {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 }
 .navbar-default {
     background-color: #2c3e50;
@@ -72,6 +72,10 @@ h3 {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
+
+.navbar-collapse.collapse {
+    padding-right: 50px;
+}
 /* -----FINE NAV BAR----- */
 
 /* -----MAIN / JUMBO----- */
@@ -86,7 +90,7 @@ img {
     max-width: 100%;
 }
 main {
-    padding-top: 80px;
+    padding-top: 75px;
 }
 section {
     padding: 100px 0;
@@ -146,6 +150,7 @@ section {
     max-width: 100%;
     border-radius: 10px;
     height: auto;
+    transition: all 2s;
 }
 
 .portfolio-img::after {
@@ -165,6 +170,22 @@ section {
     display: block;
 }
 
+.portfolio-img img {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio-img:hover {
+    background-color: #1abc9c;
+    border-radius: 10px;
+}
+
+.portfolio-img:hover img {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
 /* -----fine section 2 */
 
 /* -----section 3----- */
@@ -181,17 +202,19 @@ section {
     background-color: transparent;
     border: 1px solid white;
     border-radius: 10px;
+    color: white;
+    font-size: 20px;
 }
 
-span {
-    font-size: 20px;
-    color: white;
+.btn-default:hover, .btn-default:hover .fa-download  {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
 }
 
 .fa-download {
     color: white;
 }
-
 
 /* -----fine section3----- */
 
@@ -215,6 +238,11 @@ span {
     padding: 20px 30px;
     font-size: 20px;
     border-color: #1abc9c;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #159a80;
+    border-color: #148f77;
 }
 
 
