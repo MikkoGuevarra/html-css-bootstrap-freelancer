@@ -218,9 +218,66 @@ span {
 }
 
 
-
-
 /* -----fine section 4----- */
+
+/* -----footer----- */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 80px 0;
+}
+
+h4 {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.social {
+    font-size: 20px;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.social-contact {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin: 2px;
+}
+
+.social-contact:hover {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+.link-bootstrap {
+    color: #1abc9c;
+}
+
+.link-bootstrap:hover {
+    color: #117964;
+}
+
+.contacts {
+    padding-top: 20px
+}
+
+
+
+/* -----fine footer----- */
+
+.copyright {
+    text-align: center;
+    color: white;
+    background-color: #1a252f;
+    padding: 20px 0;
+}
+ .copyright p {
+     font-size: 15px;
+ }
 
 
 
