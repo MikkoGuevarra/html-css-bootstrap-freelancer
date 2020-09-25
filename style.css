@@ -5,6 +5,10 @@ body {
 header {
     background-color: #2c3e50;
 }
+
+.row {
+    text-align: center;
+}
 /* -----NAV BAR----- */
 .navbar-brand {
     max-height: 100%;
@@ -81,29 +85,25 @@ main {
 }
 
 .title h1 {
-    text-align: center;
     font-size: 44px;
 }
 
-hr {
+.divider::before,
+.divider::after {
+    content: '';
     width: 112px;
-    height: 10px;
-    border: 0px solid white;
-    background-color: white;
+    height: 2px;
     display: inline-block;
-    border-radius: 16px;
+    color: white;
+    vertical-align: middle;
+    /* border: 2px solid; */
+    border-radius: 2px;
+    position: relative;
 }
 
-.left-divider {
-    text-align: right;
-}
-
-.star {
-    text-align: center;
-}
-
-.right-divider {
-    text-align: left;
+.divider .fa-star {
+    vertical-align: middle;
+    padding: 0 10px;
 }
 
 
