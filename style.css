@@ -70,9 +70,15 @@ h3 {
 img {
     max-width: 100%;
 }
-
 main {
-    padding-top: 203px;
+    padding-top: 90px;
+}
+section {
+    padding: 100px 0;
+    color: #2c3e50;
+}
+
+.with-bg-color {
     background-color: #1abc9c;
     color: white;
 }
@@ -90,16 +96,20 @@ main {
 
 .divider::before,
 .divider::after {
-    content: '';
-    width: 112px;
-    height: 2px;
+    content: "";
+    width: 100px;
+    height: 3px;
     display: inline-block;
-    color: white;
+    background-color: #2c3e50;
     vertical-align: middle;
-    /* border: 2px solid; */
     border-radius: 2px;
-    position: relative;
 }
+
+.with-bg-color .divider::before,
+.with-bg-color .divider::after {
+    background-color: white;
+}
+
 
 .divider .fa-star {
     vertical-align: middle;
