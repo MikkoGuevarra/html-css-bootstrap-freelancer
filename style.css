@@ -143,14 +143,16 @@ section {
 .portfolio-img {
     margin-bottom: 38px;
     position: relative;
+    border-radius: 10px;
 }
 
 .portfolio-img img {
-    width: 400px;
-    max-width: 100%;
+    /* width: 400px; */
     border-radius: 10px;
     height: auto;
     transition: all 2s;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
 }
 
 .portfolio-img::after {
@@ -170,14 +172,10 @@ section {
     display: block;
 }
 
-.portfolio-img img {
-    opacity: 1;
-    transition: all 0.2s ease-in-out;
-}
-
 .portfolio-img:hover {
-    background-color: #1abc9c;
     border-radius: 10px;
+    background-color: rgba(26, 188, 156, 0.5);
+
 }
 
 .portfolio-img:hover img {
@@ -245,6 +243,26 @@ section {
     border-color: #148f77;
 }
 
+.form-group {
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    color: #ccc;
+}
+
+.form-group input:focus ~ label {
+    top: -25px;
+    color: #1abc9c;
+}
+
+.form-control {
+    margin-bottom: 25px;
+}
 
 /* -----fine section 4----- */
 
@@ -333,7 +351,6 @@ h4 {
     .title h1 {
         font-size: 64px;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -343,6 +360,10 @@ h4 {
 
     .navbar-collapse.collapse {
         display: block!important;
+    }
+
+    .portfolio-img img {
+        max-width: 100%;
     }
 
 
