@@ -168,19 +168,22 @@ section {
     display: none;
 }
 
-.portfolio-img:hover.portfolio-img::after {
-    display: block;
-}
-
-.portfolio-img:hover {
+.portfolio-img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(26, 188, 1560, 0.8);
     border-radius: 10px;
-    background-color: rgba(26, 188, 156, 0.5);
-
+    display: none
 }
 
-.portfolio-img:hover img {
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
+.portfolio-img:hover.portfolio-img::after,
+.portfolio-img:hover.portfolio-img::before
+ {
+    display: block;
 }
 
 
